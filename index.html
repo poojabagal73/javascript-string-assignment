@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Function</title>
+</head>
+<body>
+
+    <h1>String Assignment</h1>
+
+
+    <div>
+        <h1>capitalizes the first letter of a given string.</h1>
+        <Label for="capitalize">Enter String</Label>
+        <input type="text" onkeypress="capitalize(event)" id="capitalize">
+        <h3 id="strResult"></h3>
+    </div>
+
+    <div>
+        <h1>capitalizeAll that capitalizes each word in a given sentence.</h1>
+        <label for="capitalizeAll"> Enter String</label>
+        <input type="text" onkeypress="capitalizeAll(event)" id="capitalizeAll">
+        <h3 id="capitalizeAllResult"></h3>
+    </div>
+
+    <div>
+        <h1>function isExist that checks if a given word is part of a given string.</h1>
+        <label for="isExist"> Enter String</label>
+        <input type="text" onkeypress="isExist(event)" id="isExist">
+        <h3 id="resultIsExist"></h3>
+    </div>
+
+     <div>
+        <h1> function getOccurrenceCount that finds the number of occurrences of a word/phrase in a given string.</h1>
+        <label for="getOccurrenceCount">String</label>
+        <input type="text" id="stringOccuranceCount">
+        <lable for="getOccurrenceCount"> Word</lable>
+        <input type="text" id="getOccurrenceCountWord" onkeypress="getOccurrenceCount(event)">
+        <button onclick="wordDensity(event)">check word density</button>
+        <h3 id="resultgetOccurrenceCount"></h3> 
+        
+    </div> 
+
+    <div>
+
+        <h1>function getExt that extracts the file extension from a given string representing a file name.
+             If no extension is present, return null.</h1>
+             <lable>Select File</lable>
+        <input type="file" id="fileInput">
+        <button onclick="getSelectedFile(event)">Check File extension</button>
+        <p id="fileExtension"></p>
+    </div>
+
+    <div>
+        <h1>Removing Whitespace</h1>
+        <lable for="removewhiteSpaces"> Enter String </lable>
+        <input type="text" id="removewhiteSpaces" onkeyup="removewhiteSpaces(event)">
+        <p id="whiteSpacesRemoved"></p>
+    </div>
+
+    <div>
+        <h2> Function for reverse Word</h2>
+        <lable for ="reverseWords">Enter word</lable>
+        <input type="text" id="reverseWords" onkeyup="reverseWords(event)">
+        <h2 id="result"></h2>
+        
+    </div>
+
+    <div>
+        <h2>function countVowels</h2>
+        <lable>Enter string</lable>
+        <input type="text" onkeyup="countVowels(event)" id="countVowels">
+        <h2 id="countVowelsResult"></h2>
+    </div>
+
+    <div>
+        <h2>Function to check String is Palindrome or not</h2>
+        <lable>Enter String</lable>
+        <input type="text" onkeyup="isPalindrome(event)" id="isPalindrome">
+        <h3 id="isPalindromeResult"></h3>
+    </div>
+
+    <div>
+        <h2>function truncateString</h2>
+        <label>Enter String</label>
+        <input type="text"  id="truncateString">
+        <input type="text" onkeyup="truncateString(event)" id="truncateNumber">
+        <h2 id="truncateStringResult"></h2>
+    </div>
+
+    <div>
+        <h2>validateEmail</h2>
+        <label>Enter Email</label>
+        <input type="text" onkeyup="validateEmail(event)" id="validateEmail">
+        <h2 id="validateEmailResult"></h2>
+
+
+    </div>
+
+
+    <div>
+        <h2>maskString</h2>
+        <label>Enter maskString</label>
+        <input type="text" id="maskString">
+        <button onclick="maskString()"> String masking</button>
+        <h2 id="maskStringResult"></h2>
+    </div>
+
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
